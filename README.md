@@ -2,7 +2,7 @@
 
 Docker image for use with https://github.com/rust-embedded/cross/ Rust cross compilation tool to target Raspberry PI1/Zero/Zero W.
 
-In your Cross.toml file, add:
+In your `Cross.toml` file, add:
 
 ```toml
 [target.arm-unknown-linux-gnueabihf]
