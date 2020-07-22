@@ -8,5 +8,5 @@ RUN rm -rf /usr/arm-linux-gnu*
 
 RUN mv /usr/local/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf /usr/arm-linux-gnueabihf
 
-RUN rm -rf /usr/local/arm-bcm270
+RUN rm -rf /usr/local/arm-bcm2708
 
