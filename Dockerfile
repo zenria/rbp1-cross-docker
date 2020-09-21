@@ -10,3 +10,8 @@ RUN mv /usr/local/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf /usr/arm-linux-gnuea
 
 RUN rm -rf /usr/local/arm-bcm2708
 
+RUN curl -sL ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.9.tar.bz2 | tar jxf - &&\
+    cd alsa-lib-1.1.9 &&\
+    AR=arm-linux-gnueabihf-ar CC=arm-linux-gnueabihf-gcc ./configure --host=arm-linux-gnueabihf &&\
+    make -j4 &&\
+    make install
